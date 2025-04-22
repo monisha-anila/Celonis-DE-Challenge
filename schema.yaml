@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: retail
+    description: "Filtered view of active users from the retail table"
+    columns:
+      - name: country
+      - name: customerid
+        tests : 
+          - not_null      
+      - name: description
+      - name: InvoiceDate
+      - name: invoiceno
+        tests : 
+          - not_null
+      - name: quantity
+      - name: stockcode
+        tests : 
+          - not_null      
+      - name: timeframe
+      - name: unitprice
+      - name : returns
+
